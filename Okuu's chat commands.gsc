@@ -105,23 +105,14 @@ TakePlayerPoints(playerName, points)
     player.score -= int(points);
 }
 
-GivePlayerPerk(playerName, perk)
-{
-    player = FindPlayerByName(playerName);
-
-    if (!isDefined(player))
-    {
-        return PlayerDoesNotExistError(playerName);
-    }
-
-    switch (perk)
+switch (perk)
     {
         case "Juggernog":
             perkid = "specialty_armorvest";
             break;
 
         case "Deadshot":
-            if (level.script == "zm_prison" || level.script == "zm_tomb")
+            if (level.script == "zm_prison" && level.script == "zm_tomb")
             {
                 perkid = "specialty_deadshot";
             } else {
@@ -148,7 +139,7 @@ GivePlayerPerk(playerName, perk)
             break;
         
         case "Mule_kick":
-            if (level.script != "zm_prison" || level.script != "zm_transit")
+            if (level.script != "zm_prison" && level.script != "zm_transit")
             {
                 perkid = "specialty_additionalprimaryweapon";
             } else {
@@ -168,7 +159,7 @@ GivePlayerPerk(playerName, perk)
             break;
 
         case "Phd_flopper":
-            if (level.script == "zm_buried" || level.script == "zm_tomb")
+            if (level.script == "zm_buried" && level.script == "zm_tomb")
             {
                 perkid = "specialty_flakjacket";
             } else {
@@ -198,6 +189,15 @@ GivePlayerPerk(playerName, perk)
             if (level.script == "zm_prison")
             {
                 perkid = "specialty_grenadepulldeath";
+            } else {
+                perkid = Invalidperk();
+            }
+            break;
+
+        case "Quick_revive":
+            if (level.script != "zm_prison")
+            {
+                perkid = "specialty_quickrevive";
             } else {
                 perkid = Invalidperk();
             }
