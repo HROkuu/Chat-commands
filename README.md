@@ -10,7 +10,7 @@ As of right now the bug(s) are as follows:
 line 151: Doesn't work for Tranzit
 
 Syntax:
-Note: Substitute "player name" for me if you wanna refer to yourself
+Note: Substitute "player name" for "me" if you wanna refer to yourself
 
 !addpoints (player name) <amount of points> -- adds points
 !setpoints (player name) <amount of points> -- sets the player's points to the amount given
