@@ -1,10 +1,11 @@
 # Chat-commands
-This is a script for chat commands for T6 Plutonium https://github.com/Resxt/Plutonium-T6-Scripts/blob/main/chat_commands/chat_commands.gsc
+This is a script for chat commands for T6 Plutonium 
 
 Thanks to Resxt for sharing his script for easier chat commands
 
-Download the file from the link and put it in %localappdata%\Plutonium\storage\t6\scripts
-now download this file and put it %localappdata%\Plutonium\storage\t6\scripts\zm
+Download this file https://github.com/Resxt/Plutonium-T6-Scripts/blob/main/chat_commands/chat_commands.gsc
+ and put it in %localappdata%\Plutonium\storage\t6\scripts
+now download "Okuu's chat commands.gsc" and put it in %localappdata%\Plutonium\storage\t6\scripts\zm
 
 As of right now the bug(s) are as follows:
 None
